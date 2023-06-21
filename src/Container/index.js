@@ -3,11 +3,13 @@ import Header from './Header/Header';
 import Home from './Home/Home';
 import News from './News/News';
 import Team from './Team/Team';
+import AboutUs from './AboutUS/AboutUs';
 
 export {
     Appointment,
     Header,
     Home,
     News,
-    Team
+    Team,
+    AboutUs
 };
