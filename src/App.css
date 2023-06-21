@@ -8,14 +8,14 @@
     align-items: center;
   }
   
-  .app__bg {
+  /* .app__bg {
     background: url('./assets/bg.png');
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
   }
-  
+   */
   .app__wrapper {
     display: flex;
     justify-content: space-between;

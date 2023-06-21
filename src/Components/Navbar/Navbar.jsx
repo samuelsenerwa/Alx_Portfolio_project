@@ -1,24 +1,66 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import images from '../../Constants/images';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+
 
 import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className='app__navbar'>
-      <div className='app__navbar-logo'>
-        <img src={images.logo} alt='logo' />
-        <p className='app__navbar__logo logo_text'> Care Bridge</p>
+    <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+      <div className='container'>
+        <Link className='navbar-brand' to='/'>
+          <img src={images.logo} alt='logo' className='navbar-logo' />
+          Care Bridge
+        </Link>
+        <button
+          className='navbar-toggler'
+          type='button'
+          data-toggle='collapse'
+          data-target='#navbarNav'
+          aria-controls='navbarNav'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        >
+          <span className='navbar-toggler-icon'></span>
+        </button>
+        <div className='collapse navbar-collapse' id='navbarNav'>
+          <ul className='navbar-nav ml-auto'>
+            <li className='nav-item'>
+              <Link className='nav-link' id='link-text' to='/'>
+                Home
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' id='link-text' to='/about'>
+                AboutUs
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link'  id='link-text' to='/team'>
+                Doctors
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' id='link-text' to='/news'>
+                News
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' id='link-text' to='/contact'>
+                Contact
+              </Link>
+            </li>
+            <li className='nav-item btn-text'>
+              <Link className='nav-link' id='appointment-btn' to='/appointment'>
+                Make an appointment
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul className='app__navbar-links'>
-        <li className='link-text'><Link to="/">Home</Link></li>
-        <li className='link-text'><Link to="/about">AboutUs</Link></li>
-        <li className='link-text'><Link to="/team">Doctors</Link></li>
-        <li className='link-text'><Link to="/news">News</Link></li>
-        <li className='link-text'><Link to="/contact">Contact</Link></li>
-        <li className='appointment-btn'><Link to="/appointment">Make an appointment</Link></li>
-      </ul>
     </nav>
   );
 };

@@ -1,5 +1,6 @@
-.app__navbar {
+/* .app__navbar {
     display: flex;
+    flex: 1;
     justify-content: space-between;
     align-items: center;
     background: #ffffff;
@@ -8,7 +9,7 @@
     margin-bottom: 0;
     height: 3.5rem;
     position: sticky;
-    padding: 1rem 10rem;
+    padding: 1rem 15rem;
 }
 
 .app__navbar-logo {
@@ -73,4 +74,45 @@
 .app__navbar-links li {
     margin: 0 1rem;
     cursor: pointer;
-}
+} */
+
+
+/* Navbar.css */
+.navbar-logo {
+    height: 30px;
+    margin-right: 5px;
+  }
+  
+  .navbar-nav #link-text {
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    color: rgba(60, 59, 59, 0.5);
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  
+  .navbar-nav #link-text:hover {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .btn-text {
+    color: #ffffff;
+  }
+  
+  .navbar-nav #appointment-btn {
+    background: #a5c422;
+    border-radius: 3px;
+       color: #ffffff;
+    font-weight: 600;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding: 0.6rem 0.5rem;
+    font-size: 0.8rem;
+    margin: 3px 0 0 20px;
+  }
+
+  .navbar-nav #appointment-btn:hover {
+    background: #318add;
+  }
+
+
