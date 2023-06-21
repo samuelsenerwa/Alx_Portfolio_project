@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Preloader, Navbar, Footer } from './Components';
+import { Preloader, Navbar, Footer} from './Components';
 import { Home, AboutUs, Team, News, Contact, Appointment } from './Container';
 
 const App = () => (
@@ -16,7 +16,7 @@ const App = () => (
         <Route path="/contact" element={<Contact />} />
         <Route path="/appointment" element={<Appointment />} />
       </Routes>
-      <Footer />
+      <Footer/>
     </div>
   </Router>
 );
