@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Preloader, Navbar, Footer} from './Components';
+import { Preloader, Navbar, Footer, Slider} from './Components';
 import { Home, AboutUs, Team, News, Contact, Appointment, Header } from './Container';
 
 import './App.css';

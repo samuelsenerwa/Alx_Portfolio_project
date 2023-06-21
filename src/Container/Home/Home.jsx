@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Slider from '../../Components/Slider/Slider';
+import { Preloader } from '../../Components';
 
-function Home() {
+const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <Preloader/>
+      <Slider/>
+      </>
   )
 }
 
