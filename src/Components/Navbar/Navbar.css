@@ -38,14 +38,14 @@
    list-style: none;
 }
 
-.app__navbar-links a {
+.app__navbar-links .link-text{
     font-size: 0.9rem;
     font-family: var(--font-main);
     color: rgb(139, 132, 132);
     font-weight: bold;
  }
 
- .app__navbar-links a:hover {
+ .app__navbar-links .link-text:hover {
     color: var(--color-black);
  }
 

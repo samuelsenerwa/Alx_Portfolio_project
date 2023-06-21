@@ -1,29 +1,24 @@
 import React from 'react';
-import { Preloader } from './Components';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import {AboutUs, Header, Home, News, Team, Appointment } from './Container';
-import { Navbar, Footer } from './Components';
+import { Preloader, Navbar, Footer } from './Components';
+import { Home, AboutUs, Team, News, Contact, Appointment } from './Container';
 
+const App = () => (
+  <Router>
+    <Preloader />
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/appointment" element={<Appointment />} />
+      </Routes>
+      <Footer />
+    </div>
+  </Router>
+);
 
-
-const App = () => {
-  return (
-  <div id='root'>
-        <Navbar/>
-  {/* //   <Router>
-  //   <div>
-  //     <Preloader/>
-  //     <Navbar />
-  //     <Routes>
-  //       <Route path='/' element={<Home />} />
-  //       <Route path='/about' element={<AboutUs />} />
-  //       <Route path='/team' element={<Team />} />
-  //       <Route path='/news' element={<News />} />
-  //     </Routes>
-  //     <Footer />
-  //   </div>
-  // </Router> */}
-  </div>
-  );
-};
 export default App;
