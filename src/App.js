@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Preloader from './Components/Preloader/Preloader';
 
 function App() {
   return (
     <div className="App">
+      <Preloader/>
         <p>Header</p>
     </div>
   );
