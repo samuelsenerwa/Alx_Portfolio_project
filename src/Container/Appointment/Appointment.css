@@ -1,0 +1,53 @@
+#appointment {
+    padding-top: 100px;
+}
+
+#appointment .img-responsive {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+#appointment .section-title h2{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-family: var(--font-main);
+    color: rgb(42, 40, 40);
+    padding-bottom: 2.1rem;
+}
+
+#appointment label {
+    color: #393939;
+    font-weight: 500;
+  }
+
+  #appointment .form-control {
+    font-family: var(--font-main);
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+    transition: all ease-in-out 0.4s;
+  }
+
+  #appointment input, #appointment select {
+    height: 45px;
+  }
+
+  #appointment button#cf-submit {
+    background: #a5c422;
+    color: #ffffff;
+    font-weight: 600;
+    height: 55px;
+  }
+
+  #appointment button#cf-submit:hover {
+    background: #393939;
+    color: #ffffff;
+  }
