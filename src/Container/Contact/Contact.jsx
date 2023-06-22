@@ -1,8 +1,9 @@
 import React from 'react'
+import {Map} from '../../Components';
 
-function Contact() {
+const Contact = () => {
   return (
-    <div>Contact</div>
+    <Map/>
   )
 }
 
