@@ -21,13 +21,13 @@
   .slider .caption h3 {
     font-size: 1.3rem;
     font-family: var(--font-main);
-    line-height: 0.5rem;
+    line-height: 1.5rem;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
   }
 
   .slider .caption h1 {
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
     font-size: 3.5rem;
     font-weight: 600;
     font-family: var(--font-base);
