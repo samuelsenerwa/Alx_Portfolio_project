@@ -1,6 +1,9 @@
 import React from 'react';
 import image, { images } from '../../Constants';
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import './Footer.css';
 
 const Footer = () => {
   return (
@@ -29,7 +32,7 @@ const Footer = () => {
                                    </div>
                                    <div class="stories-info">
                                         <Link to="/"><h5>Amazing Technology</h5></Link>
-                                        <span>March 08, 2018</span>
+                                        <span>March 08, 2023</span>
                                    </div>
                               </div>
 
@@ -39,7 +42,7 @@ const Footer = () => {
                                    </div>
                                    <div class="stories-info">
                                         <Link to="/"><h5>New Healing Process</h5></Link>
-                                        <span>February 20, 2018</span>
+                                        <span>February 20, 2023</span>
                                    </div>
                               </div>
                          </div>
@@ -62,12 +65,10 @@ const Footer = () => {
                          </div>
                     </div>
 
-                    <div class="col-md-12 col-sm-12 border-top">
+                    <div class="col-md-12 col-sm-12 border-top"  style={{display: 'flex', justifyContent:'space-between', paddingTop:'1.1rem'}}>
                          <div class="col-md-4 col-sm-6">
                               <div class="copyright-text"> 
-                                   <p>Copyright &copy; 2023 CareBridge
-                                   
-                                   | Design: <a href="http://www.tooplate.com" target="_parent">Tooplate</a></p>
+                                   <p>Copyright &copy; 2023 CareBridge</p>
                               </div>
                          </div>
                          <div class="col-md-6 col-sm-6">
@@ -78,7 +79,7 @@ const Footer = () => {
                                    <a href="#">Careers</a>
                               </div>
                          </div>
-                         <div class="col-md-2 col-sm-2 text-align-center">
+                         <div class="text-align-center">
                               <div class="angle-up-btn"> 
                                   <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
                               </div>
