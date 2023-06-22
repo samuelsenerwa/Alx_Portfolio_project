@@ -22,6 +22,7 @@
 #appointment label {
     color: #393939;
     font-weight: 500;
+    font-family: var(--font-main);
   }
 
   #appointment .form-control {

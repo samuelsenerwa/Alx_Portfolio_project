@@ -8,16 +8,15 @@ const Appointment = () => {
   return (
      <>
      <Preloader/>
-    <section id="appointment" data-stellar-background-ratio="3">
+     <section id="appointment" data-stellar-background-ratio="3">
           <div class="container">
                <div class="row">
 
                     <div class="col-md-6 col-sm-6">
-                         <img src={images.medicare3} class="img-responsive" alt="" />
+                         <img src="images/appointment-image.jpg" class="img-responsive" alt=""/>
                     </div>
 
                     <div class="col-md-6 col-sm-6">
-                        
                          <form id="appointment-form" role="form" method="post" action="#">
                               <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
                                    <h2>Make an appointment</h2>
