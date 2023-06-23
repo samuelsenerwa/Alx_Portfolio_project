@@ -9,7 +9,7 @@ import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className='navbar navbar-expand-lg navbar-light bg-light position-sticky fixed-top'>
+    <nav className='navbar navbar-expand-lg navbar-light bg-white position-sticky fixed-top'>
       <div className='container'>
         <Link className='navbar-brand' to='/'>
           <img src={images.logo} alt='logo' className='navbar-logo' />
