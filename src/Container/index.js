@@ -6,6 +6,7 @@ import Team from './Team/Team';
 import AboutUs from './AboutUS/AboutUs';
 import Contact from './Contact/Contact';
 
+
 export {
     Appointment,
     Header,
@@ -13,5 +14,5 @@ export {
     News,
     Team,
     AboutUs,
-    Contact
+    Contact,
 };
