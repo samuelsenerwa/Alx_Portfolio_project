@@ -10,7 +10,7 @@ const App = () => (
   <Router>
     <Preloader />
     <div>
-      <Header/>
+      {/* <Header/> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
