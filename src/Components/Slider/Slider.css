@@ -107,6 +107,20 @@
     }
   }
 
+  @media screen and (max-width:1120px) {
+    .slider {
+      width: 100%;
+    }
+    .slider .caption {
+      top: 3%;
+      position: absolute;
+      left: 15%;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+  }
+
   @media screen and (max-width: 650px) {
     .slider {
       width: 100%;
