@@ -49,7 +49,7 @@ function NewsDetail() {
 
                                         <div class="media">
                                              <div class="media-object pull-left">
-                                                  <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""/></a>
+                                                  <a href="#"><img src={images.author} class="img-responsive" alt=""/></a>
                                              </div>
                                              <div class="media-body">
                                                   <h4 class="media-heading"><a href="#">Introducing a new healing process</a></h4>
@@ -58,7 +58,7 @@ function NewsDetail() {
 
                                         <div class="media">
                                              <div class="media-object pull-left">
-                                                  <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""/></a>
+                                                  <a href="#"><img src={images.author} class="img-responsive" alt=""/></a>
                                              </div>
                                              <div class="media-body">
                                                   <h4 class="media-heading"><a href="#">About Amazing Technology</a></h4>
