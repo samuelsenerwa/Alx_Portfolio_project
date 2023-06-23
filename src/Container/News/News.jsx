@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import images from '../../Constants/images';
 import { Preloader} from '../../Components';
 import './News.css';
@@ -19,12 +20,12 @@ const News = () => {
 
                     <div class="col-md-4 col-sm-6">
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
-                              <a href="news-detail.html">
+                              <Link to="/news-detail">
                                    <img src= {images.medicare4} id="img-responsive" alt=""/>
-                              </a>
+                              </Link>
                               <div class="news-info">
                                    <span>March 08, 2018</span>
-                                   <h3><a href="news-detail.html">About Amazing Technology</a></h3>
+                                   <h3><Link to="/news-detail">About Amazing Technology</Link></h3>
                                    <p>Maecenas risus neque, placerat volutpat tempor ut, vehicula et felis.</p>
                                    <div class="author border-top">
                                         <img src={images.author} class="img-responsive" alt=""/>

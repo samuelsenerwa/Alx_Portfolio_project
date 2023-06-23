@@ -4,6 +4,7 @@ import { Preloader, Navbar, Footer, Slider} from './Components';
 import { Home, AboutUs, Team, News, Contact, Appointment, Header } from './Container';
 
 import './App.css';
+import NewsDetail from './Container/NewsDetail/NewsDetail';
 
 const App = () => (
   <Router>
@@ -18,6 +19,7 @@ const App = () => (
         <Route path="/news" element={<News />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/appointment" element={<Appointment />} />
+        <Route path="/news-detail" element={<NewsDetail />} />
       </Routes>
       <Footer/>
     </div>
