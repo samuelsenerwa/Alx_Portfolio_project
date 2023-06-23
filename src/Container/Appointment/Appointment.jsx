@@ -83,7 +83,7 @@ const Appointment = () => {
     </section>
 
      </>
-  )
-}
+  );
+};
 
-export default Appointment
+export default Appointment;

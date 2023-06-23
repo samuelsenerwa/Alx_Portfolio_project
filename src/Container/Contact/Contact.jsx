@@ -1,9 +1,12 @@
 import React from 'react'
-import {Map} from '../../Components';
+import {Map, Preloader} from '../../Components';
 
 const Contact = () => {
   return (
+    <>
+    <Preloader/>
     <Map/>
+    </>
   )
 }
 
