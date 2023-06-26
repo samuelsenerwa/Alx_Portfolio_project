@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import swal from 'sweetalert';
 import {Preloader} from '../../Components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import images from '../../Constants/images';
-// import axios from axios;
 import './Appointment.css';
 
 const Appointment = () => {
@@ -12,6 +13,28 @@ const Appointment = () => {
 
   const handleDateChange = (e) => {
     setSelectedDate(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('/appointment', {
+        name: e.target.name.value,
+        email: e.target.email.value,
+        date: e.target.date.value,
+      department: e.target.department.value,
+      phone: e.target.phone.value,
+      message: e.target.message.value,
+      });
+
+      swal('Success', response.data, 'success');
+  } catch (error) {
+    console.error(error);
+
+    // Display error message
+    swal('Error', 'An error occurred', 'error');
+  }
   };
 
   return (
@@ -27,7 +50,7 @@ const Appointment = () => {
 
           <div className="col-md-6 col-sm-6">
             {/* CONTACT FORM HERE */}
-            <form id="appointment-form" role="form" method="post" action="#">
+            <form id="appointment-form" role="form" onSubmit={handleSubmit}>
 
               {/* SECTION TITLE */}
               <div className="section-title wow fadeInUp" data-wow-delay="0.4s">
