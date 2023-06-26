@@ -37,18 +37,8 @@
 
 # Swagger(app)
 
-
-# if __name__ == "__main__":
-#     """ Main Function """
-#     host = environ.get('MY_API_HOST')
-#     port = environ.get('MY_API_PORT')
-#     if not host:
-#         host = '0.0.0.0'
-#     if not port:
-#         port = '5000'
-#     app.run(host=host, port=port, threaded=True)
-
-from flask import Blueprint, request, jsonify
+from os import environ
+from flask import Blueprint, app, request, jsonify
 from api.database import get_db
 
 appointment_bp = Blueprint("appointment", __name__)
@@ -86,3 +76,14 @@ def create_appointment():
         # error handling database
         response = {"error": "Failed to create appointment"}
         return jsonify(response), 500
+
+
+if __name__ == "__main__":
+    """Main Function"""
+    host = environ.get("MY_API_HOST")
+    port = environ.get("MY_API_PORT")
+    if not host:
+        host = "0.0.0.0"
+    if not port:
+        port = "5000"
+    app.run(host=host, port=port, threaded=True)
