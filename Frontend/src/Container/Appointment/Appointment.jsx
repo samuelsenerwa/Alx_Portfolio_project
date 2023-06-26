@@ -35,7 +35,7 @@ const Appointment = () => {
         message: message,
       };
   
-      const response = await axios.post('/appointment', formData);
+      const response = await axios.post('http://localhost:5000/appointment', formData);
   
       swal('Success', response.data, 'success');
     } catch (error) {
