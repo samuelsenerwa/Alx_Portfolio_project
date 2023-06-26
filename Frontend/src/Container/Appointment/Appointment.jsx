@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Preloader} from '../../Components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import images from '../../Constants/images';
 import './Appointment.css';
 
 const Appointment = () => {
+
+  //picking a date
+  const [selectedDate, setSelectedDate] = useState('');
+
+  const handleDateChange = (e) => {
+    setSelectedDate(e.target.value);
+  };
+
   return (
      <>
      <Preloader/>
@@ -44,7 +52,7 @@ const Appointment = () => {
                   <div className="col-md-6 col-sm-6">
                     <div className="form-group">
                       <label htmlFor="date">Select Date</label>
-                      <input type="date" name="date" value="" className="form-control" />
+                      <input type="date" name="date" value={selectedDate} className="form-control" onChange={handleDateChange}/>
                     </div>
                   </div>
 
