@@ -15,27 +15,36 @@ const Appointment = () => {
     setSelectedDate(e.target.value);
   };
 
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [department, setDepartment] = useState('General Health');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
-      const response = await axios.post('/appointment', {
-        name: e.target.name.value,
-        email: e.target.email.value,
-        date: e.target.date.value,
-      department: e.target.department.value,
-      phone: e.target.phone.value,
-      message: e.target.message.value,
-      });
-
+      const formData = {
+        name: name,
+        email: email,
+        date: selectedDate,
+        department: department,
+        phone: phone,
+        message: message,
+      };
+  
+      const response = await axios.post('/appointment', formData);
+  
       swal('Success', response.data, 'success');
-  } catch (error) {
-    console.error(error);
-
-    // Display error message
-    swal('Error', 'An error occurred', 'error');
-  }
+    } catch (error) {
+      console.error(error);
+      swal('Error', 'An error occurred', 'error');
+    }
   };
+  
+  
 
   return (
      <>
@@ -62,14 +71,14 @@ const Appointment = () => {
                   <div className="col-md-6 col-sm-6">
                     <div className="form-group">
                       <label htmlFor="name">Name</label>
-                      <input type="text" className="form-control" id="name" name="name" placeholder="Full Name" />
+                      <input type="text" className="form-control" id="name" name="name" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} />
                     </div>
                   </div>
 
                   <div className="col-md-6 col-sm-6">
                     <div className="form-group">
                       <label htmlFor="email">Email</label>
-                      <input type="email" className="form-control" id="email" name="email" placeholder="Your Email" />
+                      <input type="email" className="form-control" id="email" name="email" placeholder="Your Email" value={email} onChange={(e) => setEmail(e.target.value)} />
                     </div>
                   </div>
 
@@ -83,23 +92,23 @@ const Appointment = () => {
                   <div className="col-md-6 col-sm-6">
                     <div className="form-group">
                       <label htmlFor="select">Select Department</label>
-                      <select className="form-control">
-                        <option>General Health</option>
-                        <option>Cardiology</option>
-                        <option>Dental</option>
-                        <option>Medical Research</option>
-                      </select>
+                      <select className="form-control" value={department} onChange={(e) => setDepartment(e.target.value)}>
+                          <option>General Health</option>
+                          <option>Cardiology</option>
+                          <option>Dental</option>
+                          <option>Medical Research</option>
+                        </select>
                     </div>
                   </div>
 
                   <div className="col-md-12 col-sm-12">
                     <div className="form-group">
                       <label htmlFor="telephone">Phone Number</label>
-                      <input type="tel" className="form-control" id="phone" name="phone" placeholder="Phone" />
+                      <input type="tel" className="form-control" id="phone" name="phone" placeholder="Phone" value={phone} onChange={(e) => setPhone(e.target.value)} />
                     </div>
                     <div className="form-group">
                       <label htmlFor="Message">Additional Message</label>
-                      <textarea className="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
+                      <textarea className="form-control" rows="5" id="message" name="message" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                     </div>
                     <div className="form-group">
                       <button type="submit" className="form-control" id="cf-submit" name="submit">Submit Button</button>
