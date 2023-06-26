@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {Preloader} from '../../Components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import images from '../../Constants/images';
+// import axios from axios;
 import './Appointment.css';
 
 const Appointment = () => {
