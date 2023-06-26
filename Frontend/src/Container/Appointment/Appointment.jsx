@@ -35,11 +35,13 @@ const Appointment = () => {
         message: message,
       };
   
-      const response = await axios.post('http://localhost:5000/appointment', formData, {
+      const serializedFormData = JSON.stringify(formData);
+      const response = await axios.post('/appointment', serializedFormData, {
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
+          'Content-Type': 'application/json'
         }
       });
+
   
       swal('Success', response.data, 'success');
     } catch (error) {
