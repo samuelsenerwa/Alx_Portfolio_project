@@ -1,6 +1,7 @@
 from flask import Blueprint, request, jsonify
 
-from Backend.api.database import get_db
+from .database import get_db
+
 
 appointment_bp = Blueprint("appointment", __name__)
 
