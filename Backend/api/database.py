@@ -1,6 +1,8 @@
 import sqlite3
 from flask import g
 
+from Backend.api import app
+
 DATABASE = "appointment.db"
 
 
