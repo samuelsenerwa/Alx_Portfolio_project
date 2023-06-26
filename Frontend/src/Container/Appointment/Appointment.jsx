@@ -36,7 +36,7 @@ const Appointment = () => {
       };
   
       const serializedFormData = JSON.stringify(formData);
-      const response = await axios.post('/appointment', serializedFormData, {
+      const response = await axios.post('http://127.0.0.1:5000/appointment', serializedFormData, {
         headers: {
           'Content-Type': 'application/json'
         }
