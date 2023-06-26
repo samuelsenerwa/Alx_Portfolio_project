@@ -54,7 +54,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav-item btn-text'>
-              <Link className='nav-link' id='appointment-btn' to='/appointment'>
+              <Link className='nav-link small-appointment-btn' id='appointment-btn' to='/appointment'>
                 Make an appointment
               </Link>
             </li>

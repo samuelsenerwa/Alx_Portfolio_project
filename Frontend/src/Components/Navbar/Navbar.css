@@ -102,7 +102,7 @@
   .navbar-nav #appointment-btn {
     background: #a5c422;
     border-radius: 3px;
-       color: #ffffff;
+    color: #ffffff;
     font-weight: 600;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -115,4 +115,12 @@
     background: #318add;
   }
 
+  @media (max-width: 768px) {
+    .small-appointment-btn {
+      font-size: 12px;
+      padding: 4px 8px;
+      width: 60%;
+    }
+  }
+  
 

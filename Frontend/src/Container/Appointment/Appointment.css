@@ -13,7 +13,7 @@
 #appointment .section-title h2{
     text-align: center;
     font-size: 2.5rem;
-    line-height: 1.5rem;
+    line-height: 2.5rem;
     font-weight: 600;
     font-family: var(--font-main);
     color: rgb(42, 40, 40);
@@ -52,4 +52,16 @@
   #appointment button#cf-submit:hover {
     background: #393939;
     color: #ffffff;
+  }
+
+  @media screen and (max-width:650px) {
+
+    #appointment .section-title {
+      margin-top: 25px;
+    }
+
+    #appointment .section-title h2 {
+        line-height: 2.5rem;
+    }
+    
   }
