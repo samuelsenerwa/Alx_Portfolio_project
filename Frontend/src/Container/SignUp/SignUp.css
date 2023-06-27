@@ -1,0 +1,12 @@
+.sign-up {
+    position: absolute;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up-left img {
+    border-radius: 10px 0px 0px 10px;
+    width: 50%;
+    object-fit: cover;
+}
