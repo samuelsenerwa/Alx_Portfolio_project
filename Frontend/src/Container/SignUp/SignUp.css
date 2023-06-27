@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     gap: 5rem;
-    height: 70vh;
   }
   
   .sign-up-left {
@@ -17,6 +16,7 @@
     border-radius: 10px 0px 0px;
     width: 100%;
     object-fit: cover;
+    height: 100%;
     
   }
   
@@ -132,6 +132,7 @@
   .sign-up-right {
     padding-top: 50px;
   }
+
   @media (max-width: 768px) {
     .sign-up {
       width: 100% !important;
@@ -158,6 +159,45 @@
     .google-btn {
       width: 70%;
       margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 650px){
+    .sign-up{
+        width: 100%;
+    }
+
+    .sign-up-left img {
+        height: 50vh;
+    }
+
+    .sign-up-right {
+        margin-top: 0;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .google-btn {
+        width: 100%;
+    }
+
+    .sign-up-right .sign-up-text {
+        text-align: center;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .sign-up-left img {
+        height: 100%;
+        width: 100%;
     }
   }
   
