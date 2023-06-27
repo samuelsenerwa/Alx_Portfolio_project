@@ -33,7 +33,7 @@
   
   .sign-up-text {
     text-align:start;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .sign-up-text h3 {
@@ -46,9 +46,11 @@
     font-family: var(--font-main);
     font-weight: 250;
     justify-self: flex-start;
+    font-size: 0.9rem;
   }
   
   .google-btn {
+    margin-bottom: 20px;
     width: 75%; 
     padding: 10px; 
     height: 40px;
@@ -60,6 +62,11 @@
     padding-top: 5px;
     padding-bottom: 1px;
     cursor: pointer;
+  }
+
+  .google-btn:hover {
+    background:rgb(226, 247, 0);
+    
   }
 
   .google-btn p {
