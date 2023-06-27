@@ -1,18 +1,105 @@
 .sign-up {
     width: 100%;
-    z-index: 1;
+    z-index: 9999;
     position: absolute;
     top: 15%;
     display: flex;
-    justify-content: flex-start;
-    background-color: aqua;
-}
+    justify-content: space-evenly;
+  }
+  
+  .sign-up-left {
+    flex: 2;
+  }
+  
+  .sign-up-left img {
+    border-radius: 10px 0px 0px;
+    width: 100%;
+  }
+  
+  .sign-up-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  .sign-up-logo img {
+    width: 75px;
+    height: 60px;
+    margin: 1.5rem;
+    justify-self: center;
+  }
+  
+  .sign-up-text {
+    text-align:start;
+    margin-bottom: 20px;
+  }
 
-.sign-up-left img {
-    width: 50%;
-}
+  .sign-up-text h3 {
+    font-family: var(--font-main);
+    font-weight: 550;
+    color: #474947;
+  }
 
-.sign-up-right img {
+  .sign-up-text p {
+    font-family: var(--font-main);
+    font-weight: 250;
+    justify-self: flex-start;
+  }
+  
+  .google-btn {
+    width: 75%; 
+    padding: 10px; 
+    height: 40px;
+    border-radius: 5px; 
+   border: 0.5px  #E8E8E8 solid;
+   gap: 5px;
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    cursor: pointer;
+  }
+
+  .google-btn p {
+    align-items: center;
+  }
+  
+  .google-btn img {
     width: 25px;
     height: 25px;
-}
+    margin-right: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password {
+    text-align: right;
+  }
+  
+  button[type='submit'] {
+    width: 100%;
+  }
+  
+  /* Additional styles for spacing */
+  .sign-up-right {
+    padding-top: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    .sign-up {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .sign-up-left,
+    .sign-up-right {
+      flex: 1;
+      width: 100%;
+    }
+  }
+  
