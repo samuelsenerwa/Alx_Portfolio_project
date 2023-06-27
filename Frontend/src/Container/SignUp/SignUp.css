@@ -4,7 +4,9 @@
     position: absolute;
     top: 15%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 5rem;
+    height: 70vh;
   }
   
   .sign-up-left {
@@ -14,6 +16,8 @@
   .sign-up-left img {
     border-radius: 10px 0px 0px;
     width: 100%;
+    object-fit: cover;
+    
   }
   
   .sign-up-right {
@@ -22,7 +26,6 @@
     align-items: center;
     justify-content: center;
     padding: 0 20px;
-    height: 70vh;
   }
   
   .sign-up-logo img {
@@ -129,21 +132,32 @@
   .sign-up-right {
     padding-top: 50px;
   }
-  
   @media (max-width: 768px) {
     .sign-up {
-      width: 100%;
+      width: 100% !important;
+      display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
     }
   
-    .sign-up-left,
-    .sign-up-right {
-      flex: 1;
+    .sign-up-left img {
       width: 100%;
+      border-radius: 10px;
     }
-
-    
+  
+    .sign-up-right {
+        width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .google-btn {
+      width: 70%;
+      margin-bottom: 20px;
+    }
   }
   

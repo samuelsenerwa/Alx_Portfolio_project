@@ -9,7 +9,7 @@ function SignUp() {
       <img src={images.medicare4} alt="medical attendant_image"/>
     </div>
     
-    <div className="sign-up-right app__wrapper_info">
+    <div className="sign-up-right ">
         <div className='sign-up-logo'>
           <img src={images.logo} alt='sign-up logo'/>
         </div>
