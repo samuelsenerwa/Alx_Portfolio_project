@@ -26,7 +26,7 @@ function SignUp() {
           </div>
         <form>
               <div className='form-group'>
-                <label>Email:</label>
+                <label className='label-text'>Email:</label>
                 <input
                   type='email'
                   className='form-control'
@@ -35,15 +35,16 @@ function SignUp() {
                 />
               </div>
               <div className='form-group'>
-                <label>Password:</label>
+                <label className='label-text'>Password:</label>
                 <input
                   type='password'
                   className='form-control'
+                  placeholder='........'
                   required
                 />
                 <div className='forgot-password'></div>
               </div>
-              <button type='submit'>
+              <button type='submit' className='submit-btn'>
                 Login
               </button>
             </form>
