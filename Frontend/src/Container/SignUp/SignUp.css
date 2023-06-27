@@ -1,12 +1,18 @@
 .sign-up {
+    width: 100%;
+    padding: 0rem 1rem;
+    z-index: 1;
     position: absolute;
     top: 15%;
     display: flex;
-    justify-content: center;
+    background-color: aqua;
 }
 
 .sign-up-left img {
-    border-radius: 10px 0px 0px 10px;
     width: 50%;
-    object-fit: cover;
+}
+
+.sign-up-right img {
+    width: 25px;
+    height: 25px;
 }

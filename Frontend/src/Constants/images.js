@@ -19,6 +19,7 @@ import medicare5 from '../Images/medicare5.jpg';
 import medicare6 from '../Images/medicare6.jpg';
 import medicare7 from '../Images/medicare7.jpg';
 import logo from '../Images/logo.png';
+import google from '../Images/image-2.png';
 
 
 export default {
@@ -42,5 +43,6 @@ export default {
     medicare5,
     medicare6,
     medicare7,
-    logo
+    logo,
+    google
 };

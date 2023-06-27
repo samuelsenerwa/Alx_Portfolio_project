@@ -6,13 +6,20 @@ function SignUp() {
   return (
     <div className="sign-up  section__padding">
     <div className="sign-up-left">
-      <img src={images.medicare4} alt="chef_image"/>
+      <img src={images.medicare4} alt="medical attendant_image"/>
     </div>
     
-    <div className="app__wrapper_info">
-      <h1 className="headtext__cormorant">What We Believe In</h1>
-
-      <div className="sign-up-right">
+    <div className="sign-up-right app__wrapper_info">
+        <div className='sign-up-logo'>
+          <img src={images.logo} alt='sign-up logo'/>
+        </div>
+        <div className='sign-up-text'>
+          <h3>Login to your account</h3>
+          <p>Join Care Bridge Today!</p>
+        </div>
+        <div className='google-btn'>
+          <img src={images.google} alt='google logo'/>
+          <p>Connect With Google</p>
         </div>
     </div> 
   </div>
