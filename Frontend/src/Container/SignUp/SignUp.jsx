@@ -21,7 +21,9 @@ function SignUp() {
           <img src={images.google} alt='google logo'/>
           <p>Connect With Google</p>
         </div>
-        <span><p>or Sign in with Email</p></span>
+        <div className='span-text'>
+          <span style={{color: '#DDDDDD'}}>-------------</span><span> or Sign in with Email </span><span style={{color : '#DDDDDD'}}>------------- </span>
+          </div>
         <form>
               <div className='form-group'>
                 <label>Email:</label>

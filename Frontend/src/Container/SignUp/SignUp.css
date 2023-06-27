@@ -47,6 +47,7 @@
     font-weight: 250;
     justify-self: flex-start;
     font-size: 0.9rem;
+    font-family: var(--font-main);
   }
   
   .google-btn {
@@ -71,6 +72,18 @@
 
   .google-btn p {
     align-items: center;
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    font-weight: 250;
+  }
+
+  .span-text {
+    font-weight: 600;
+    color: #474947;
+    font-family: var(--font-main);
+    font-size: 12px;
+    word-wrap: break-word;
+    margin-bottom: 20px;
   }
   
   .google-btn img {
