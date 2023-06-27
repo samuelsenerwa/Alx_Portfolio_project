@@ -3,7 +3,7 @@ import Footer from './Footer/Footer';
 import Navbar from './Navbar/Navbar';
 import Slider from './Slider/Slider';
 import Map from './Map/Map';
-import Login from './Login/Login';
+import SignUp from './SignUp/SignUp';
 
 export {
     Preloader,
@@ -11,5 +11,5 @@ export {
     Navbar,
     Slider,
     Map,
-    Login
+    SignUp
 };
