@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: center;
     padding: 0 20px;
+    height: 70vh;
   }
   
   .sign-up-logo img {
@@ -52,7 +53,7 @@
   
   .google-btn {
     margin-bottom: 20px;
-    width: 75%; 
+    width: 100%; 
     padding: 10px; 
     height: 40px;
     border-radius: 5px; 
@@ -99,9 +100,29 @@
   .forgot-password {
     text-align: right;
   }
-  
-  button[type='submit'] {
-    width: 100%;
+
+  .label-text {
+    font-family: var(--font-main);
+    font-size: 0.8rem;
+  }
+ 
+  .submit-btn {
+    display: flex;
+    width: 26.25rem;
+    padding: 0.8125rem 0.625rem 0.75rem 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8125rem;
+    border: 2px #E8E8E8 solid;
+    border-radius: 6px;
+    background: #7F265B;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .submit-btn:hover {
+    background-color: #474947;
   }
   
   /* Additional styles for spacing */
@@ -111,6 +132,7 @@
   
   @media (max-width: 768px) {
     .sign-up {
+      width: 100%;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -121,5 +143,7 @@
       flex: 1;
       width: 100%;
     }
+
+    
   }
   
