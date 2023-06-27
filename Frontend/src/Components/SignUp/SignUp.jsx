@@ -8,7 +8,7 @@ const SignUp = () => {
     <section className='SignUp'>
         <div class="container">
             <div class="row">
-                
+                <p>SignUp</p>
             </div>
         </div>
     </section>
@@ -16,4 +16,4 @@ const SignUp = () => {
   )
 }
 
-export default SignUp
+export default SignUp;
