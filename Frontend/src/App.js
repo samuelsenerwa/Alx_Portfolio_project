@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Preloader, Navbar, Footer, Slider, SignUp } from './Components';
+import { Preloader, Navbar, Footer, Slider, SignUp} from './Components';
 import { Home, AboutUs, Team, News, Contact, Appointment, Header } from './Container';
 
 import './App.css';
@@ -8,8 +8,9 @@ import NewsDetail from './Container/NewsDetail/NewsDetail';
 
 const App = () => (
   <Router>
+    <Preloader />
     <div>
-      <Preloader />
+      {/* <Header/> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,11 +19,10 @@ const App = () => (
         <Route path="/news" element={<News />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/appointment" element={<Appointment />} />
-        <Route path="/signup" element={<SignUp />} />
         {/* <Route path="/news-detail" element={<NewsDetail />} /> */}
         {/* <Route path="/news-detail/:index" element={<NewsDetail />} /> */}
       </Routes>
-      <Footer />
+      <Footer/>
     </div>
   </Router>
 );
