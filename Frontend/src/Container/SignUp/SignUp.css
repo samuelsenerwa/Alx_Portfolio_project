@@ -1,10 +1,10 @@
 .sign-up {
     width: 100%;
-    padding: 0rem 1rem;
     z-index: 1;
     position: absolute;
     top: 15%;
     display: flex;
+    justify-content: flex-start;
     background-color: aqua;
 }
 

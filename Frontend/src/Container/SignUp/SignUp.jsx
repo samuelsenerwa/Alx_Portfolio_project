@@ -21,6 +21,30 @@ function SignUp() {
           <img src={images.google} alt='google logo'/>
           <p>Connect With Google</p>
         </div>
+        <span><p>or Sign in with Email</p></span>
+        <form>
+              <div className='form-group'>
+                <label>Email:</label>
+                <input
+                  type='email'
+                  className='form-control'
+                  placeholder='@mail.com'
+                  required
+                />
+              </div>
+              <div className='form-group'>
+                <label>Password:</label>
+                <input
+                  type='password'
+                  className='form-control'
+                  required
+                />
+                <div className='forgot-password'></div>
+              </div>
+              <button type='submit'>
+                Login
+              </button>
+            </form>
     </div> 
   </div>
   );
