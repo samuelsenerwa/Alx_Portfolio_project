@@ -5,7 +5,7 @@ import News from './News/News';
 import Team from './Team/Team';
 import AboutUs from './AboutUS/AboutUs';
 import Contact from './Contact/Contact';
-
+import SignUp from './SignUp/SignUp';
 
 export {
     Appointment,
@@ -15,4 +15,5 @@ export {
     Team,
     AboutUs,
     Contact,
+    SignUp
 };
