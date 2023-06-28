@@ -94,7 +94,6 @@ function SignUp({ onSignUp }) {
               placeholder="........"
               required
             />
-            <div className="forgot-password"></div>
           </div>
           <button type="submit" className="submit-btn">
             Login

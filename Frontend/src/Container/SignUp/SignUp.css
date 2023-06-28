@@ -104,6 +104,12 @@
     text-align: right;
   }
 
+  .password-toggle {
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+  }
+
   .label-text {
     font-family: var(--font-main);
     font-size: 0.8rem;
