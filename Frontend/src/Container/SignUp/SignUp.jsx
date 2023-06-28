@@ -1,8 +1,11 @@
 import React from 'react'
 import images from '../../Constants/images';
 import './SignUp.css'
+import '../../firebase';
+import firebase from '../../firebase';
 
 function SignUp() {
+
   return (
     <div className="sign-up  section__padding">
     <div className="sign-up-left">

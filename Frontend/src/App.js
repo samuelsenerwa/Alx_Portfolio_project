@@ -33,7 +33,7 @@ const App = () => {
           <Footer/>
         </div>
       ) : (
-        <SignUp onSignUp={handleSignUp} />
+        <SignUp onSignUp={user} />
       )}
     </div>
   );
