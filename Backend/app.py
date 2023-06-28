@@ -18,6 +18,37 @@ def close_db(exception):
     if db is not None:
         db.close()
 
+# Doctors TEAM DB
+@app.route("/team", methods=["GET"])
+def get_team():
+    with app.app_context():
+        db = get_db()
+        cursor = db.cursor()
+        cursor.execute("SELECT * FROM team")
+        team_members = cursor.fetchall()
+        cursor.close()
+
+    #converting the team data into list
+    team_list = []
+    for member in team_members:
+        member_dict = {
+            "id": member[0],
+            "name":member[1],
+            "speciality": member[2],
+            "phone": member[3],
+            "email":member[4],
+            "image":member[5],
+            "social": {
+                "linkedin": member[6],
+                "facebook": member[7],
+                "twitter": member[8],
+                "flickr": member[9]
+            }
+        }
+        team_list.append(member_dict)
+
+    return jsonify(team_list)
+
 
 @app.route("/appointment", methods=["POST"])
 def handle_appointment():
@@ -81,11 +112,15 @@ def get_appointments():
     return jsonify(appointment_list)
 
 
+
+
 if __name__ == "__main__":
     # Create the database table if it doesn't exist
     with app.app_context():
         db = get_db()
         cursor = db.cursor()
+
+        #appointment table if it doesn't exist
         cursor.execute(
             "CREATE TABLE IF NOT EXISTS appointments ("
             "id INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -96,6 +131,22 @@ if __name__ == "__main__":
             "phone TEXT NOT NULL,"
             "message TEXT NOT NULL)"
         )
+        
+        #Doctors Team Table
+        cursor.execute(
+            "CREATE TABLE IF NOT EXISTS team ("
+            "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+            "name TEXT NOT NULL,"
+            "specialty TEXT NOT NULL,"
+            "phone TEXT NOT NULL,"
+            "email TEXT NOT NULL,"
+            "image TEXT NOT NULL,"
+            "linkedin TEXT,"
+            "facebook TEXT,"
+            "twitter TEXT,"
+            "flickr TEXT)"
+        )
+
         cursor.close()
 
     app.run(debug=True)
