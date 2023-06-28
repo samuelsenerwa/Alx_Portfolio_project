@@ -206,5 +206,11 @@
     .submit-btn {
         width: 100%;
     }
+
+    .password-toggle {
+      position: absolute;
+      right: 25%;
+      bottom: 13.5%;
+    }
   }
  
