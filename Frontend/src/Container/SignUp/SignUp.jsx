@@ -5,10 +5,12 @@ import '../../firebase';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import firebaseConfig from '../../firebase';
+
+
 firebase.initializeApp(firebaseConfig);
 
-function SignUp() {
-
+function SignUp({onSignUp}) {
+  
 function handleGoogleSignIn(){
   const provider = new firebase.auth.GoogleAuthProvider();
   firebase
@@ -16,11 +18,11 @@ function handleGoogleSignIn(){
   .signInWithPopup(provider)
   .then((result) => {
     const user = result.user;
-    SignUp(user);
+    onSignUp(user);
   })
   .catch((error) => {
     console.log(error)
-  })
+  });
 
 }
 
