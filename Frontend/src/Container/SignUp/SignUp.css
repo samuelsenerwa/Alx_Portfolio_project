@@ -144,6 +144,11 @@
         height: 100%;
         width: 100%;
     }
+
+    .password-toggle {
+      position: absolute;
+      right: 13%;
+    }
   }
  
 
