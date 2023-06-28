@@ -2,9 +2,27 @@ import React from 'react'
 import images from '../../Constants/images';
 import './SignUp.css'
 import '../../firebase';
-import firebase from '../../firebase';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import firebaseConfig from '../../firebase';
+firebase.initializeApp(firebaseConfig);
 
 function SignUp() {
+
+function handleGoogleSignIn(){
+  const provider = new firebase.auth.GoogleAuthProvider();
+  firebase
+  .auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    const user = result.user;
+    SignUp(user);
+  })
+  .catch((error) => {
+    console.log(error)
+  })
+
+}
 
   return (
     <div className="sign-up  section__padding">
@@ -20,7 +38,7 @@ function SignUp() {
           <h3>Login to your account</h3>
           <p>Join Care Bridge Today!</p>
         </div>
-        <div className='google-btn'>
+        <div className='google-btn' onClick={handleGoogleSignIn}>
           <img src={images.google} alt='google logo'/>
           <p>Connect With Google</p>
         </div>
