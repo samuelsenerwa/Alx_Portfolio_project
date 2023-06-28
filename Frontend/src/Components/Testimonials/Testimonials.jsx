@@ -63,7 +63,7 @@ const Testimonials = () => {
                 <div className="testimonial-item" key={index}>
                   <div className="text">
                     <p><img src={images.quote1}/>{testimonial.text}</p>
-                    <p className="name">{testimonial.name}</p>
+                    <p className="name">  <img src={images.person}/>{testimonial.name}</p>
                     <span className="position">{testimonial.position}</span>
                   </div>
                 </div>
