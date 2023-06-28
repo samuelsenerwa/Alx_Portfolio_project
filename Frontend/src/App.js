@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Preloader, Navbar, Footer, Slider } from './Components';
 import { Home, AboutUs, Team, News, Contact, Appointment, Header, SignUp } from './Container';
-import { Route, Routes, BrowserRouter, Link } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import NewsDetail from './Container/NewsDetail/NewsDetail';
 
@@ -19,7 +19,6 @@ const App = () => {
         <div>
           <Preloader />
           <Navbar />
-          <Slider />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
