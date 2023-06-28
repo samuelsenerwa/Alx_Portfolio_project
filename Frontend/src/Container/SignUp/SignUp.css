@@ -139,6 +139,14 @@
     padding-top: 50px;
   }
 
+  @media screen and (max-width: 1024px) {
+    .sign-up-left img {
+        height: 100%;
+        width: 100%;
+    }
+  }
+ 
+
   @media (max-width: 768px) {
     .sign-up {
       width: 100% !important;
@@ -199,11 +207,4 @@
         width: 100%;
     }
   }
-
-  @media screen and (max-width: 1024px) {
-    .sign-up-left img {
-        height: 100%;
-        width: 100%;
-    }
-  }
-  
+ 
