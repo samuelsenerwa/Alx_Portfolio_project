@@ -22,6 +22,7 @@ import logo from '../Images/logo.png';
 import google from '../Images/image-2.png';
 import person from '../Images/person.jpg';
 import quote from '../Images/quote.png';
+import quote1 from '../Images/quote1.png';
 
 export default {
     aboutBg,
@@ -47,6 +48,7 @@ export default {
     logo,
     google, 
     person,
-    quote
+    quote,
+    quote1
 
 };

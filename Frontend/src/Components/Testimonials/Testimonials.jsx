@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Testimonials.css';
+import images from '../../Constants/images';
 
 const Testimonials = () => {
   const settings = {
@@ -61,7 +62,7 @@ const Testimonials = () => {
               {testimonials.map((testimonial, index) => (
                 <div className="testimonial-item" key={index}>
                   <div className="text">
-                    <p>{testimonial.text}</p>
+                    <p><img src={images.quote1}/>{testimonial.text}</p>
                     <p className="name">{testimonial.name}</p>
                     <span className="position">{testimonial.position}</span>
                   </div>
