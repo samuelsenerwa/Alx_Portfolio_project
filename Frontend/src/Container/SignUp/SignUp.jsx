@@ -10,7 +10,31 @@ import firebaseConfig from '../../firebase';
 firebase.initializeApp(firebaseConfig);
 
 function SignUp({onSignUp}) {
-  
+
+
+  //emails
+  function handleEmailSignIn(event) {
+    event.preventDefault(); ///prevent the form from submitting normally
+
+    const email = event.target.elements.email.value;
+    const password = event.target.elements.password.value;
+
+    firebase
+    .auth()
+    .signInWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      //Login Successful
+      const user = userCredential.user;
+      onSignUp(user);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  }
+
+
+//google sign in
+
 function handleGoogleSignIn(){
   const provider = new firebase.auth.GoogleAuthProvider();
   firebase
@@ -47,11 +71,12 @@ function handleGoogleSignIn(){
         <div className='span-text'>
           <span style={{color: '#DDDDDD'}}>-------------</span><span> or Sign in with Email </span><span style={{color : '#DDDDDD'}}>------------- </span>
           </div>
-        <form>
+        <form onSubmit={handleEmailSignIn}>
               <div className='form-group'>
                 <label className='label-text'>Email:</label>
                 <input
                   type='email'
+                  name='email'
                   className='form-control'
                   placeholder='@mail.com'
                   required
@@ -61,6 +86,7 @@ function handleGoogleSignIn(){
                 <label className='label-text'>Password:</label>
                 <input
                   type='password'
+                  name='password'
                   className='form-control'
                   placeholder='........'
                   required
