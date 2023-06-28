@@ -1,7 +1,7 @@
 import React from 'react';
 import images from '../../Constants/images';
 import './AboutUs.css';
-import { Preloader } from '../../Components';
+import { Preloader, Testimonials } from '../../Components';
 
 function AboutUs() {
   return (
@@ -27,10 +27,10 @@ function AboutUs() {
                         </figure>
                    </div>
               </div>
-              
          </div>
     </div>
 </section>
+<Testimonials/>
 </>
   )
 }

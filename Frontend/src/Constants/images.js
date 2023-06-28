@@ -20,7 +20,8 @@ import medicare6 from '../Images/medicare6.jpg';
 import medicare7 from '../Images/medicare7.jpg';
 import logo from '../Images/logo.png';
 import google from '../Images/image-2.png';
-
+import person from '../Images/person.jpg';
+import quote from '../Images/quote.png';
 
 export default {
     aboutBg,
@@ -44,5 +45,8 @@ export default {
     medicare6,
     medicare7,
     logo,
-    google
+    google, 
+    person,
+    quote
+
 };
