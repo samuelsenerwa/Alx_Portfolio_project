@@ -28,6 +28,8 @@ def get_team():
         team_members = cursor.fetchall()
         cursor.close()
 
+    print("Retrieved team members:", team_members)
+
     #converting the team data into list
     team_list = []
     for member in team_members:
@@ -46,6 +48,8 @@ def get_team():
             }
         }
         team_list.append(member_dict)
+
+    print("Formmatted team data :", team_list)
 
     return jsonify(team_list)
 
@@ -145,6 +149,18 @@ if __name__ == "__main__":
             "facebook TEXT,"
             "twitter TEXT,"
             "flickr TEXT)"
+        )
+
+        #inserting into doctors table
+         # Insert sample data into the team table
+        cursor.execute(
+            "INSERT INTO team (name, specialty, phone, email, image, linkedin, facebook, twitter, flickr) VALUES "
+            "('Nate Baston', 'General Principal', '010-020-0120', 'general@company.com', 'image1.jpg', "
+            "'linkedin.com/nate', '', '', ''),"
+            "('Jason Stewart', 'Pregnancy', '010-070-0170', 'pregnancy@company.com', 'image2.jpg', "
+            "'', 'facebook.com/jason', 'twitter.com/jason', ''),"
+            "('Miasha Nakahara', 'Cardiology', '010-040-0140', 'cardio@company.com', 'image3.jpg', "
+            "'', '', 'twitter.com/miasha', '')"
         )
 
         cursor.close()
