@@ -126,3 +126,10 @@
   }
   
 }
+
+@media screen and (max-width:650px) {
+  .slick-slider .slick-slide .text .name img {
+     position: absolute;
+     margin-left: 15px;
+  }
+}
