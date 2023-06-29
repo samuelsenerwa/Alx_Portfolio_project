@@ -153,15 +153,17 @@ if __name__ == "__main__":
 
         #inserting into doctors table
          # Insert sample data into the team table
+       # Insert sample data into the team table
         cursor.execute(
             "INSERT INTO team (name, specialty, phone, email, image, linkedin, facebook, twitter, flickr) VALUES "
-            "('Nate Baston', 'General Principal', '010-020-0120', 'general@company.com', 'image1.jpg', "
+            "('Nate Baston', 'General Principal', '010-020-0120', 'general@company.com', '/home/senerwa/Web/portfolio_project/Frontend/src/Images/team-image1.jpg', "
             "'linkedin.com/nate', '', '', ''),"
-            "('Jason Stewart', 'Pregnancy', '010-070-0170', 'pregnancy@company.com', 'image2.jpg', "
+            "('Jason Stewart', 'Pregnancy', '010-070-0170', 'pregnancy@company.com', '/home/senerwa/Web/portfolio_project/Frontend/src/Images/team-image2.jpg', "
             "'', 'facebook.com/jason', 'twitter.com/jason', ''),"
-            "('Miasha Nakahara', 'Cardiology', '010-040-0140', 'cardio@company.com', 'image3.jpg', "
+            "('Miasha Nakahara', 'Cardiology', '010-040-0140', 'cardio@company.com', '/home/senerwa/Web/portfolio_project/Frontend/src/Images/team-image3.jpg', "
             "'', '', 'twitter.com/miasha', '')"
         )
+
 
         cursor.close()
 
