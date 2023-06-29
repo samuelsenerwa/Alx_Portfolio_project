@@ -1,9 +1,26 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Preloader } from '../../Components';
 import { images } from '../../Constants';
 import './Team.css'
 
 const Team = () => {
+
+     const [teamData, setTeamData] = useState([]);
+
+     useEffect(() => {
+          fetchTeamData();
+     }, []);
+
+     const fetchTeamData = async () => {
+          try {
+               const response = await fetch(' http://127.0.0.1:5000/team')
+               const data = await response.json();
+               setTeamData(data);
+          } catch (error) {
+               console.log('Error fetching team data:', error);
+          }             
+     };
+
   return (
     <>
     <Preloader/>
