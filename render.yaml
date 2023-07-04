@@ -1,0 +1,6 @@
+# render.yaml
+
+services:
+  - name: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: /home/senerwa/Web/portfolio_project/Backend/venv/bin/gunicorn app:app
