@@ -1,6 +1,9 @@
 # render.yaml
 
-services:
-  - name: backend
-    buildCommand: pip install -r requirements.txt
-    startCommand: /home/senerwa/Web/portfolio_project/Backend/venv/bin/gunicorn app:app
+name: example-service-name
+region: us-west
+branch: main
+rootDir: Backend/api
+runtime: python
+buildCommand: pip install -r requirements.txt
+startCommand: /home/senerwa/Web/FlaskApi/venv/bin/gunicorn app:app
