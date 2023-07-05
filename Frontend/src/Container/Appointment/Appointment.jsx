@@ -154,6 +154,7 @@ const Appointment = () => {
                     <div className="form-group">
                       <label htmlFor="telephone">Phone Number</label>
                       <input type="tel" className="form-control" id="phone" name="phone" placeholder="Phone" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                      {errors.phone && <div className='invalid-feedback'>{errors.phone}</div>}
                     </div>
                     <div className="form-group">
                       <label htmlFor="Message">Additional Message</label>
