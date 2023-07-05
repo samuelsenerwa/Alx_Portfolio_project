@@ -28,17 +28,17 @@ const Testimonials = () => {
     {
       name: 'Mark Huff',
       position: 'Students',
-      text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
+      text: 'I am extremely grateful for the exceptional care and support I received at Your Health Center. The doctors and staff were knowledgeable, attentive, and genuinely caring. They took the time to listen to my concerns and provided me with personalized treatment options. My experience here has been nothing short of outstanding.',
     },
     {
       name: 'Rodel Golez',
-      position: 'Striper',
-      text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
+      position: 'Teacher',
+      text: 'I have been a patient at Your Health Center for several years now, and I am continually impressed by the level of professionalism and expertise demonstrated by the entire team. From the moment I walk through the door, I am greeted with warmth and kindness. The doctors take the time to explain my diagnosis and treatment plan in a way that I can easily understand. I feel truly valued as a patient here.',
     },
     {
       name: 'Ken Bosh',
-      position: 'Manager',
-      text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
+      position: 'MD Toyota',
+      text: 'As someone who has a fear of doctors and medical settings, I was pleasantly surprised by the welcoming atmosphere at Your Health Center. The staff went above and beyond to make me feel comfortable and at ease during my visits. They patiently addressed all my questions and concerns, ensuring that I had a positive experience. I highly recommend this center for anyone seeking compassionate and quality healthcare.',
     },
     // Add more testimonials as needed
   ];
@@ -51,8 +51,7 @@ const Testimonials = () => {
             <span className="subheading">Testimonials</span>
             <h2 className="mb-4">Our Patients Say About Us</h2>
             <p>
-              Separated they live in. A small river named Duden flows by their place and supplies it with the necessary
-              regelialia. It is a paradisematic country.
+             This is what our clients say about us from far and wide.Your Health Center exceeded my expectations in every way. The facilities are modern and well-maintained, and the staff is friendly and efficient. 
             </p>
           </div>
         </div>
