@@ -15,8 +15,8 @@ function AboutUs() {
                    <div class="about-info">
                         <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Your <i class="fa fa-h-square"></i>ealth Center</h2>
                         <div class="wow fadeInUp" data-wow-delay="0.8s">
-                             <p>Aenean luctus lobortis tellus, vel ornare enim molestie condimentum. Curabitur lacinia nisi vitae velit volutpat venenatis.</p>
-                             <p>Sed a dignissim lacus. Quisque fermentum est non orci commodo, a luctus urna mattis. Ut placerat, diam a tempus vehicula.</p>
+                             <p>A place dedicated to your overall well-being. Our team of professionals is committed to providing personalized care and support that caters to your specific health needs..</p>
+                             <p>From preventive screenings to advanced treatments, we strive to empower you with the knowledge and resources necessary to achieve optimal health. Trust us to be your partner on your wellness journey, offering compassionate care in a welcoming environment.</p>
                         </div>
                         <figure class="profile wow fadeInUp" data-wow-delay="1s">
                              <img src={images.author} class="img-responsive" alt=""/>
