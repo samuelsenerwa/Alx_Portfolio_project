@@ -35,11 +35,15 @@ const Appointment = () => {
       validationErrors.email = 'Email is required';
     }
 
-    //if no validation errors
-    if(Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
+    if (!phone || isNaN(phone)) {
+      validationErrors.phone = 'Enter a valid phone number';
     }
+
+    //if no validation errors
+    if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    return;
+  }
   
     try {
       const formData = {
