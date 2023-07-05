@@ -44,8 +44,8 @@ const Team = () => {
                                         <h3>Nate Baston</h3>
                                         <p>General Principal</p>
                                         <div class="team-contact-info">
-                                             <p><i class="fa fa-phone"></i> 010-020-0120</p>
-                                             <p><i class="fa fa-envelope-o"></i> <a href="#">general@company.com</a></p>
+                                             <p><i class="fa fa-phone"></i> +254 764372891</p>
+                                             <p><i class="fa fa-envelope-o"></i> <a href="#">carebridge@company.com</a></p>
                                         </div>
                                         <ul class="social-icon">
                                              <li><a href="#" class="fa fa-linkedin-square"></a></li>
@@ -64,8 +64,8 @@ const Team = () => {
                                         <h3>Jason Stewart</h3>
                                         <p>Pregnancy</p>
                                         <div class="team-contact-info">
-                                             <p><i class="fa fa-phone"></i> 010-070-0170</p>
-                                             <p><i class="fa fa-envelope-o"></i> <a href="#">pregnancy@company.com</a></p>
+                                             <p><i class="fa fa-phone"></i> +254 716536271</p>
+                                             <p><i class="fa fa-envelope-o"></i> <a href="#">carebridge@company.com</a></p>
                                         </div>
                                         <ul class="social-icon">
                                              <li><a href="#" class="fa fa-facebook-square"></a></li>
@@ -85,8 +85,8 @@ const Team = () => {
                                         <h3>Miasha Nakahara</h3>
                                         <p>Cardiology</p>
                                         <div class="team-contact-info">
-                                             <p><i class="fa fa-phone"></i> 010-040-0140</p>
-                                             <p><i class="fa fa-envelope-o"></i> <a href="#">cardio@company.com</a></p>
+                                             <p><i class="fa fa-phone"></i> +254 790134921</p>
+                                             <p><i class="fa fa-envelope-o"></i> <a href="#">carebridge@company.com</a></p>
                                         </div>
                                         <ul class="social-icon">
                                              <li><a href="#" class="fa fa-twitter"></a></li>
