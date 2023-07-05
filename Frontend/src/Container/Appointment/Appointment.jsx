@@ -153,7 +153,7 @@ const Appointment = () => {
                   <div className="col-md-12 col-sm-12">
                     <div className="form-group">
                       <label htmlFor="telephone">Phone Number</label>
-                      <input type="tel" className="form-control" id="phone" name="phone" placeholder="Phone" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                      <input type="tel" className={`form-control ${errors.email ? 'is-invalid': ''}`} id="phone" name="phone" placeholder="Phone" value={phone} onChange={(e) => setPhone(e.target.value)} />
                       {errors.phone && <div className='invalid-feedback'>{errors.phone}</div>}
                     </div>
                     <div className="form-group">
