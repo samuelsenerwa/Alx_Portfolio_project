@@ -13,6 +13,7 @@
     "firebase": "^9.23.0",
     "http-proxy-middleware": "^2.0.6",
     "leaflet": "^1.9.4",
+    "rapidapi-connect": "^0.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
