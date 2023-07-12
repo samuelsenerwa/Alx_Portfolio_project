@@ -52,7 +52,7 @@ CheckOut the site at [senerwablog.tech ](https://www.senerwablog.tech/)
 ## []()Author
 
 -   [Alvin](https://github.com/vpnchengo)
--   [Gideon]()
+-   [Gideon](https://github.com/GiddyLesGid)
 -   [Samuel](https://github.com/samuelsenerwa)
 
 ## []()License
