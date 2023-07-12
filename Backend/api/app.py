@@ -7,6 +7,10 @@ CORS(app)
 
 
 def get_db():
+    """
+    Function to establish a database connection and store it in the 'g' object.
+    This ensures a single connection is used per request.
+    """
     if "db" not in g:
         g.db = sqlite3.connect("appointments.db")
     return g.db
@@ -14,6 +18,9 @@ def get_db():
 
 @app.teardown_appcontext
 def close_db(exception):
+    """
+    Function to close the database connection at the end of the request.
+    """
     db = g.pop("db", None)
     if db is not None:
         db.close()
@@ -21,6 +28,9 @@ def close_db(exception):
 # Doctors TEAM DB
 @app.route("/team", methods=["GET"])
 def get_team():
+    """
+    API route to retrieve team members.
+    """
     with app.app_context():
         db = get_db()
         cursor = db.cursor()
@@ -56,6 +66,9 @@ def get_team():
 
 @app.route("/appointment", methods=["POST"])
 def handle_appointment():
+    """
+    API route to handle appointment submission.
+    """
     data = request.get_json()
 
     name = data.get("name")
