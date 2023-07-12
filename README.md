@@ -1,43 +1,36 @@
-ALX Portfolio MVP
+CareBridge
 
-This repository contains the Minimum Viable Product (MVP) for the ALX portfolio project. The ALX portfolio MVP is a web application that connects patients with doctors for appointment scheduling. It provides a platform for patients to easily find and book appointments with doctors based on their specialization and availability.
+Introduction
 
-Authors
-Gideon Lang'at
-Alvin Charo
-Samuel Senerwa
+CareBridge is a web application that connects patients with doctors for convenient appointment scheduling. It provides an intuitive platform for patients to easily find and book appointments with doctors based on their specialization and availability. This project was developed as part of the ALX portfolio MVP.
 
-Features
+Deployed Site: CareBridge
+Final Project Blog Article: CareBridge: Connecting Patients with Doctors
+Authors:
+Gideon Lang'at: LinkedIn
+Alvin Charo: LinkedIn
+Samuel Senerwa: LinkedIn
 
-User Registration and Login: Users can create an account and log in to the platform.
-Doctor Listings: The platform provides a list of doctors with their specialties and contact information.
-Appointment Scheduling: Users can schedule appointments with doctors based on their availability.
-User Profile: Users can manage their profile information and view their appointment history.
+Installation
 
-Technologies Used
-
-Backend: Python, Flask, SQLite
-Frontend: React.js
-Additional Libraries and Tools: Flask CORS, React Router
-
-Getting Started
-
-To get started with the ALX portfolio MVP project, follow the steps below:
+To run the CareBridge web application locally, follow these steps:
 
 1. Clone the repository:
 git clone <repository-url>
 
-2. Set up the backend:
+Set up the backend:
+
 Navigate to the Backend directory:
 cd Backend
 
 Install the required dependencies:
+
 pip install -r requirements.txt
 
 Run the backend server:
 python wsgi.py
 
-3. Set up the frontend:
+2. Set up the frontend:
 
 Navigate to the Frontend directory:
 cd Frontend
@@ -48,17 +41,30 @@ npm install
 Start the development server:
 npm start
 
+3. Access the application:
 
-4. Access the application:
+Open your web browser and visit http://localhost:3000 to access the CareBridge web application locally.
 
-Open your web browser and visit http://localhost:3000 to access the ALX portfolio MVP application.
+Usage
+
+Once you have the CareBridge web application running, you can:
+
+Browse through the list of doctors, view their specialties and contact information.
+Schedule appointments with doctors based on their availability.
+Manage your profile information and view your appointment history.
 
 Contributing
 
-We welcome contributions to enhance the ALX portfolio MVP project. If you have any suggestions, improvements, or bug fixes, feel free to submit a pull request.
+We welcome contributions to enhance the CareBridge web application. If you have any suggestions, improvements, or bug fixes, feel free to submit a pull request.
 
 Before contributing, please review the Contributing Guidelines for more information.
 
-License
+Related Projects
+
+CareBridge Mobile App - The mobile version of the CareBridge application.
+CareBridge API - The backend API for the CareBridge application.
+
+Licensing
 
 This project is licensed under the MIT License.
+
