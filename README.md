@@ -12,6 +12,15 @@ This repository contains the Minimum Viable Product (MVP) for the ALX portfolio 
 - **Appointment Scheduling**: Users can schedule appointments with doctors based on their availability.
 - **User Profile**: Users can manage their profile information and view their appointment history.
 
+## ScreenShots
+- ### Login interface
+
+![Screenshot_20230629155908](https://github.com/samuelsenerwa/Alx_Portfolio_project/assets/66512735/e486fe9c-b0b9-4391-af18-1dc9a6a289e9)
+<br>
+
+- ### Appointment interface
+
+![Screenshot_20230629155949](https://github.com/samuelsenerwa/Alx_Portfolio_project/assets/66512735/5dcf1af0-eea3-40d9-885a-493e4dacf630)
 
 ## [](https://github.com/samuelsenerwa/Alx_Portfolio_project#technologies-used)Technologies Used
 
@@ -21,15 +30,24 @@ This repository contains the Minimum Viable Product (MVP) for the ALX portfolio 
 ## []()Getting Started
 
 1.  Clone the repository: git clone
-2. Set up the backend: Navigate to the Backend directory
-3. Install the required dependencies
-4. Set up the frontend
-6. Access the application
+<pre><code> git clone https://github.com/samuelsenerwa/Alx_Portfolio_project.git </code></pre>
+3. Set up the backend: Navigate to the Backend directory
+<pre><code> cd Backend </code></pre>
+5. Install the required dependencies
+<pre><code> pip install -r requirement.txt </code></pre>
+6. Setup gunicorn to serve the application
+<pre><code> pip install gunicorn </code></pre>
+8. Set up the frontend
+<pre><code>npm install </code></pre>
+9. Access the application
+<pre><code>npm start </code></pre>
 
 ----------
 ## []()Contributing
 
 We welcome contributions to enhance the project. If you have any suggestions, improvements, or bug fixes, feel free to submit a pull request.
+<br>
+CheckOut the site at [senerwablog.tech ](https://www.senerwablog.tech/)
 
 ## []()Author
 
