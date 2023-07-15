@@ -42,7 +42,7 @@ const Team = () => {
 
                                    <div class="team-info">
                                         <h3>Nate Baston</h3>
-                                        <p>General Principal</p>
+                                        <p>Surgeon</p>
                                         <div class="team-contact-info">
                                              <p><i class="fa fa-phone"></i> +254 764372891</p>
                                              <p><i class="fa fa-envelope-o"></i> <a href="#">carebridge@company.com</a></p>
@@ -62,7 +62,7 @@ const Team = () => {
 
                                    <div class="team-info">
                                         <h3>Jason Stewart</h3>
-                                        <p>Pregnancy</p>
+                                        <p>Neurologist</p>
                                         <div class="team-contact-info">
                                              <p><i class="fa fa-phone"></i> +254 716536271</p>
                                              <p><i class="fa fa-envelope-o"></i> <a href="#">carebridge@company.com</a></p>
@@ -83,7 +83,7 @@ const Team = () => {
 
                                    <div class="team-info">
                                         <h3>Miasha Nakahara</h3>
-                                        <p>Cardiology</p>
+                                        <p>Cardiologist</p>
                                         <div class="team-contact-info">
                                              <p><i class="fa fa-phone"></i> +254 790134921</p>
                                              <p><i class="fa fa-envelope-o"></i> <a href="#">carebridge@company.com</a></p>
