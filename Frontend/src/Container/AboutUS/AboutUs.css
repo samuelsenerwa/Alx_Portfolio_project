@@ -37,3 +37,8 @@
     font-weight: 400;
     font-size: 0.9rem;
   }
+
+  .about-info img {
+    height: 50px;
+    width: 60px;
+  }
