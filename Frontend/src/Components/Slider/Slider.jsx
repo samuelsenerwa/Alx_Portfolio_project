@@ -25,7 +25,7 @@ const Slider = () => {
           <img src={images.slider2} alt="Slide 2" />
           <div class="caption">
             <div class="col-md-offset-1 col-md-10">
-                <h3>Aenean luctus lobortis tellus</h3>
+                <h3>Feel every moment of your life</h3>
                 <h1>New Lifestyle</h1>
                 <Link to="/about" class="section-btn btn btn-default btn-gray smoothScroll">More About Us</Link>
             </div>
@@ -35,7 +35,7 @@ const Slider = () => {
           <img src={images.slider3} alt="Slide 3" />
           <div class="caption">
             <div class="col-md-offset-1 col-md-10">
-                <h3>Pellentesque nec libero nisi</h3>
+                <h3>Your wellbeing is our joy</h3>
                 <h1>Your Health Benefits</h1>
                 <Link to='/news' class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</Link>
             </div>
