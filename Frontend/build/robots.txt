@@ -1,3 +1,12 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt
+
+This file is used to provide instructions to web robots or crawlers. It follows the guidelines of the Robots Exclusion Protocol.
+
+For more information about the Robots Exclusion Protocol, please refer to the official documentation: [https://www.robotstxt.org/robotstxt.html](https://www.robotstxt.org/robotstxt.html)
+
 User-agent: *
 Disallow:
+
+The above directives indicate that all web robots are allowed to access and crawl all parts of the website. No specific URLs are excluded.
+
+If you have specific pages or directories that you want to restrict from being crawled, you can modify the `Disallow` directive accordingly.
